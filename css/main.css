@@ -276,3 +276,177 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+/* =========================== */
+/*    author's custom styles   */
+/* ============================*/
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+/*******  header section  *********/
+header {}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header-divider {}
+
+
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*******  main ********/
+
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+
+  flex-flow: row wrap;
+}
+
+.content-wrapper {}
+
+
+/********  aside section  *******/
+
+
+.content-wrapper {}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.form-description {}
+
+.form {}
+
+input {
+  display: block;
+}
+
+/*    features section   */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.content-wrapper {}
+
+.features-items {}
+
+
+.fontawesome-icon {}
+
+.features-item-description {}
+
+/*    reviews section   */
+
+.reviews {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.reviews,
+article {
+  flex-flow: row wrap;
+}
+
+
+/*   footer section */
+
+.content-wrapper {}
+
+.footer-content {
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {}
+
+/*   contact section */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+/*   faq section */
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*   mission section */
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
