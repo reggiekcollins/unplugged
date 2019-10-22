@@ -17,8 +17,6 @@ html {
   line-height: 1.4;
 }
 
-
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -189,17 +187,6 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -207,7 +194,6 @@ textarea {
    ========================================================================== */
 
 @media print {
-
   *,
   *:before,
   *:after {
@@ -225,11 +211,11 @@ textarea {
   }
 
   a[href]:after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   abbr[title]:after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   /*
@@ -294,7 +280,6 @@ footer {
   flex-flow: row wrap;
 }
 
-
 /*******  header section  *********/
 header {
   padding: 15px 0;
@@ -313,9 +298,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
-
 }
-
 
 .header nav {
   display: flex;
@@ -330,10 +313,16 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   margin-top: 15px;
+  list-style: none;
+  margin: 0 0.75rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 /*******  main ********/
-
 
 .hero-area {
   display: flex;
@@ -342,25 +331,23 @@ header nav ul {
   flex-flow: row wrap;
 }
 
-.content-wrapper {}
-
+.content-wrapper {
+}
 
 /********  aside section  *******/
 
-
-.content-wrapper {}
+.content-wrapper {
+}
 
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
 }
 
 aside .content-wrapper {
   padding: 16px 20px 50px 20px;
-
 }
 
 aside h3 {
@@ -371,9 +358,11 @@ aside p {
   padding: 40px 0 20px 0;
 }
 
-.form-description {}
+.form-description {
+}
 
-.form {}
+.form {
+}
 
 input {
   display: block;
@@ -393,7 +382,6 @@ input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
 }
 
 .features h2 {
@@ -407,32 +395,30 @@ input {
 
 .features .content-wrapper {
   text-align: center;
-
 }
 
-.features-items {}
+.features-items {
+}
 
+.fontawesome-icon {
+}
 
-.fontawesome-icon {}
-
-.features-item-description {}
+.features-item-description {
+}
 
 /*    reviews section   */
 
 .reviews {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+
+  justify-content: center;
 }
 
 .reviews .content-wrapper {
   width: 60%;
+  max-width: 400px;
   margin: 0 auto;
-}
-
-.reviews,
-article {
-  flex-flow: row wrap;
 }
 
 .reviews h3 {
@@ -445,9 +431,7 @@ article {
 }
 
 .reviews-content h2 {
-  padding: 55px 0 35px 0;
 }
-
 
 /*   footer section */
 
@@ -471,6 +455,13 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .icons {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100px;
+}
+
 footer .social p {
   display: flex;
   justify-content: center;
@@ -479,6 +470,7 @@ footer .social p {
 
 .copyright {
   margin: 20px 0;
+  text-align: center;
 }
 
 /*   contact section */
@@ -525,5 +517,175 @@ footer .social p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
 
+/*******    media query *******/
+
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header */
+  header {
+    justify-content: space-around;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 35%;
+    margin: 0;
+  }
+
+  /* Features */
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews .content-wrapper {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .icons {
+    margin: 0 3rem 3rem 0;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 2rem;
+  }
+
+  footer .copyright {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /*  about page */
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: 0 -40px;
+    text-align: center;
+  }
+
+  .mission-content p {
+    width: 80%;
+    padding: 0 2rem;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+  .contact-content div {
+    margin: 0 2rem;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: flex-betweeen;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+  }
+
+  /*  faq */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
+  header {
+    width: 960px;
+  }
+
+  main {
+    width: 960px;
+  }
 }
