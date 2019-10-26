@@ -316,7 +316,9 @@ img {
   width: 100%;
 }
 
-figure {}
+figure {
+  margin: 0;
+}
 
 address {
   font-family: 'Open Sans', sans-serif;
@@ -335,7 +337,7 @@ footer {
   flex-flow: row wrap;
 }
 
-3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 aside .form {
+aside .form {
   margin-top: 30px;
 }
 
@@ -344,6 +346,7 @@ input[type=text] {
   width: 100%;
   color: #2a423a;
   font-style: italic;
+  padding: 1rem 0;
 }
 
 input[type=button] {
@@ -374,6 +377,14 @@ header .content-wrapper {
   flex-flow: row wrap;
   width: 80%;
   margin: 0 auto;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -407,9 +418,20 @@ nav a {
 /*******  main ********/
 
 .hero-area {
+  background-image: url('../img/jake-melara-30679-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  color: #fff;
+}
+
+.hero-area h1 {
+  padding-bottom: 30rem;
+  font-size: 3rem;
 }
 
 .content-wrapper {}
@@ -425,24 +447,23 @@ aside {
   flex-flow: row wrap;
   background-color: #527158;
   color: #fff;
+  text-transform: capitalize;
 }
 
 aside .content-wrapper {
 
-  padding: 16px 20px 50px 20px;
+  padding: 8px 20px 20px 20px;
 }
 
 aside h3 {
-  padding: 24px 0 16px 0;
+  padding: 16px 0 16px 0;
+  font-size: 1.8rem;
 }
 
 aside p {
-  padding: 40px 0 20px 0;
+  padding: 16px 0 16px 0;
+  font-size: 1rem;
 }
-
-.form-description {}
-
-.form {}
 
 input {
   display: block;
@@ -452,9 +473,15 @@ input {
 /*    features section   */
 
 .features {
+  background-image: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  text-transform: capitalize;
 }
 
 .features .features-items {
@@ -477,12 +504,6 @@ input {
   text-align: center;
 }
 
-.features-items {}
-
-.fontawesome-icon {}
-
-.features-item-description {}
-
 /********* about *********/
 .mission,
 .contact-wrapper,
@@ -501,13 +522,10 @@ p {
   background-color: #2a423a;
   color: #fff;
   justify-content: center;
+  text-transform: capitalize;
+
 }
 
-.reviews .content-wrapper {
-  width: 60%;
-  max-width: 400px;
-  margin: 0 auto;
-}
 
 .reviews h3 {
   width: 55%;
@@ -515,14 +533,14 @@ p {
 }
 
 .reviews h2 {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  font-weight: normal;
+  line-height: 2;
 }
 
 .reviews p {
   line-height: 2;
 }
-
-.reviews-content h2 {}
 
 /*   footer section */
 
@@ -546,7 +564,7 @@ footer .content-wrapper {
 
 footer .contact {
   text-align: center;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 }
 
 footer .social-icons {
@@ -569,7 +587,7 @@ footer .social p {
 }
 
 .copyright {
-  margin: 20px 0;
+  margin: 16px 0;
   text-align: center;
 }
 
@@ -664,6 +682,11 @@ footer .social p {
 
   /* Hero Area */
 
+  .hero-area h1 {
+    padding-bottom: 30rem;
+    font-size: 3.75rem;
+  }
+
   /* Aside */
   aside .content-wrapper {
     margin: 50px 0;
@@ -696,17 +719,22 @@ footer .social p {
     display: flex;
     justify-content: space-between;
     padding-bottom: 3rem;
+
   }
 
   .reviews .content-wrapper {
-    width: 80%;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
   }
 
-  .reviews article div {
+  .reviews-content {
     width: 49%;
+    margin: 0 12px;
+
   }
+
+
 
   /* Footer */
   footer .content-wrapper {
@@ -925,5 +953,5 @@ footer .content-wrapper {
 }
 
 .copyright {
-  padding-top: 40px;
+  padding-top: 28px;
 }
