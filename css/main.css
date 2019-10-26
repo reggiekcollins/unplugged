@@ -333,9 +333,36 @@ footer {
   flex-flow: row wrap;
 }
 
+3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*******  header section  *********/
 header {
   padding: 15px 0;
+  background-color: #202322;
+  color: #fff;
 }
 
 header .content-wrapper {
@@ -394,9 +421,12 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #fff;
 }
 
 aside .content-wrapper {
+
   padding: 16px 20px 50px 20px;
 }
 
@@ -466,7 +496,8 @@ p {
 .reviews {
   display: flex;
   flex-flow: row wrap;
-
+  background-color: #2a423a;
+  color: #fff;
   justify-content: center;
 }
 
@@ -485,9 +516,18 @@ p {
   padding-bottom: 40px;
 }
 
+.reviews p {
+  line-height: 2;
+}
+
 .reviews-content h2 {}
 
 /*   footer section */
+
+footer {
+  background-color: #202322;
+  color: #fff;
+}
 
 footer .content-wrapper {
   width: 55%;
@@ -499,6 +539,7 @@ footer .content-wrapper {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
 }
 
 footer .contact {
@@ -550,6 +591,8 @@ footer .social p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #fff;
 }
 
 .faq h2 {
@@ -574,6 +617,14 @@ footer .social p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #fff;
+  margin: 0;
+}
+
+.contact-section {
+  background-color: #2a423a;
+  color: #fff;
 }
 
 /*******    media query *******/
@@ -642,6 +693,7 @@ footer .social p {
   .reviews article {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 3rem;
   }
 
   .reviews .content-wrapper {
