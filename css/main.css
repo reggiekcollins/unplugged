@@ -312,7 +312,9 @@ p {
   font-size: .75rem;
 }
 
-img {}
+img {
+  width: 100%;
+}
 
 figure {}
 
