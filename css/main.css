@@ -194,6 +194,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *:before,
   *:after {
@@ -211,11 +212,11 @@ textarea {
   }
 
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -270,6 +271,58 @@ textarea {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* General Styles */
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
+  margin: 20px 0;
+}
+
+p {
+  font-size: .75rem;
+}
+
+img {}
+
+figure {}
+
+address {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
 }
 
 header,
@@ -330,13 +383,11 @@ nav a {
   flex-flow: row wrap;
 }
 
-.content-wrapper {
-}
+.content-wrapper {}
 
 /********  aside section  *******/
 
-.content-wrapper {
-}
+.content-wrapper {}
 
 aside {
   display: flex;
@@ -357,11 +408,9 @@ aside p {
   padding: 40px 0 20px 0;
 }
 
-.form-description {
-}
+.form-description {}
 
-.form {
-}
+.form {}
 
 input {
   display: block;
@@ -396,14 +445,11 @@ input {
   text-align: center;
 }
 
-.features-items {
-}
+.features-items {}
 
-.fontawesome-icon {
-}
+.fontawesome-icon {}
 
-.features-item-description {
-}
+.features-item-description {}
 
 /********* about *********/
 .mission,
@@ -439,8 +485,7 @@ p {
   padding-bottom: 40px;
 }
 
-.reviews-content h2 {
-}
+.reviews-content h2 {}
 
 /*   footer section */
 
@@ -798,6 +843,7 @@ footer .social p {
     padding-bottom: 1rem;
   }
 }
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
