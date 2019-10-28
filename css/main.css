@@ -194,7 +194,6 @@ textarea {
    ========================================================================== */
 
 @media print {
-
   *,
   *:before,
   *:after {
@@ -212,11 +211,11 @@ textarea {
   }
 
   a[href]:after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   abbr[title]:after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   /*
@@ -281,7 +280,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   text-align: left;
 }
@@ -297,19 +296,19 @@ a {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
 }
 
 h3,
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   margin: 20px 0;
 }
 
 p {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 img {
@@ -321,7 +320,7 @@ figure {
 }
 
 address {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .content-wrapper {
@@ -341,7 +340,7 @@ aside .form {
   margin-top: 30px;
 }
 
-input[type=text] {
+input[type="text"] {
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
@@ -349,12 +348,12 @@ input[type=text] {
   padding: 1rem 0;
 }
 
-input[type=button] {
+input[type="button"] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
   background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
   color: #e2e3ed;
@@ -378,7 +377,6 @@ header .content-wrapper {
   width: 80%;
   margin: 0 auto;
 }
-
 
 header figure {
   width: 70%;
@@ -420,7 +418,7 @@ nav a {
 /*******  main ********/
 
 .hero-area {
-  background-image: url('../img/jake-melara-30679-unsplash.jpg');
+  background-image: url("../img/jake-melara-30679-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -436,11 +434,13 @@ nav a {
   font-size: 3rem;
 }
 
-.content-wrapper {}
+.content-wrapper {
+}
 
 /********  aside section  *******/
 
-.content-wrapper {}
+.content-wrapper {
+}
 
 aside {
   display: flex;
@@ -453,7 +453,6 @@ aside {
 }
 
 aside .content-wrapper {
-
   padding: 8px 20px 20px 20px;
 }
 
@@ -475,7 +474,7 @@ input {
 /*    features section   */
 
 .features {
-  background-image: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-image: url("../img/rawpixel-800820-unsplash1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -506,6 +505,12 @@ input {
   text-align: center;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+  color: salmon;
+}
+
 /********* about *********/
 .mission,
 .contact-wrapper,
@@ -532,7 +537,6 @@ p {
   left: 0;
 }
 
-
 /********* reviews section   ********/
 
 .reviews {
@@ -542,9 +546,7 @@ p {
   color: #fff;
   justify-content: center;
   text-transform: capitalize;
-
 }
-
 
 .reviews h3 {
   width: 55%;
@@ -578,7 +580,6 @@ footer .content-wrapper {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
 }
 
 footer .contact {
@@ -738,7 +739,6 @@ footer .social p {
     display: flex;
     justify-content: space-between;
     padding-bottom: 3rem;
-
   }
 
   .reviews .content-wrapper {
@@ -750,10 +750,7 @@ footer .social p {
   .reviews-content {
     width: 49%;
     margin: 0 12px;
-
   }
-
-
 
   /* Footer */
   footer .content-wrapper {
@@ -873,7 +870,7 @@ footer .social p {
 
   .hero-area h1 {
     width: 300px;
-    margin-left: 26rem;
+    margin-left: 16rem;
   }
 
   /*****   aside  *****/
@@ -890,7 +887,7 @@ footer .social p {
   /******  features  *******/
 
   .features h2 {
-    width: 480px;
+    width: 860px;
     margin-left: 5rem;
   }
 
