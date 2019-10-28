@@ -434,13 +434,7 @@ nav a {
   font-size: 3rem;
 }
 
-.content-wrapper {
-}
-
 /********  aside section  *******/
-
-.content-wrapper {
-}
 
 aside {
   display: flex;
@@ -585,6 +579,7 @@ footer .content-wrapper {
 footer .contact {
   text-align: center;
   padding-bottom: 50px;
+  margin-top: 8px;
 }
 
 footer .social-icons {
@@ -604,6 +599,15 @@ footer .social p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .fab {
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #527158;
+  padding: 0.6rem;
+  border-radius: 100%;
+  margin: 0 0.75rem;
 }
 
 .copyright {
@@ -786,10 +790,6 @@ footer .social p {
     text-align: center;
   }
 
-  .social-icons {
-    margin-top: 2rem;
-  }
-
   footer .copyright {
     width: 100%;
     max-width: 400px;
@@ -924,7 +924,7 @@ footer .social p {
   .about-footer,
   .contact,
   .icons {
-    margin-left: 3rem;
+    margin-left: 0rem;
   }
 
   .contact-content {
