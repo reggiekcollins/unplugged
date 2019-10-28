@@ -831,6 +831,10 @@ footer .social p {
     text-align: center;
   }
 
+  .map figure {
+    padding-bottom: 55.5%;
+  }
+
   .about-footer .footer-content {
     width: 75%;
     max-width: 640px;
@@ -930,6 +934,10 @@ footer .social p {
     justify-content: space-between;
     margin: 0 6rem;
     padding-top: 0;
+  }
+
+  .map figure {
+    padding-bottom: 38%;
   }
 
   .about-footer .footer-content {
