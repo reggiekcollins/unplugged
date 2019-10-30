@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -194,6 +194,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *:before,
   *:after {
@@ -211,11 +212,11 @@ textarea {
   }
 
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -379,7 +380,7 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 70%;
+  width: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,6 +400,7 @@ header figure {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+
 }
 
 header nav ul {
@@ -408,6 +410,7 @@ header nav ul {
   margin-top: 15px;
   list-style: none;
   margin: 0 0.75rem;
+  text-transform: uppercase;
 }
 
 nav a {
@@ -529,6 +532,10 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.chat {
+  margin-bottom: 1rem;
 }
 
 /********* reviews section   ********/
@@ -690,6 +697,12 @@ footer .fab {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header .content-wrapper figure {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 6px;
   }
 
   header nav {
@@ -861,6 +874,16 @@ footer .fab {
 
   .content-wrapper {
     max-width: 960px;
+  }
+
+  header img {
+    width: 129%;
+  }
+
+  header .content-wrapper figure {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 6px;
   }
 
   .hero-area {
